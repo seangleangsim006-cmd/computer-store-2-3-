@@ -1,4 +1,6 @@
 import 'package:computer_app/view/auth/sign_up_screen.dart';
+import 'package:computer_app/view/bottom_navbar_screen.dart';
+import 'package:computer_app/view/home_screen.dart';
 import 'package:flutter/material.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => SignUpScreen()),
+        MaterialPageRoute(builder: (context) => BottomNavbarScreen()),
       );
     });
   }
